@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
+const ccxt = require('ccxt')
+const bitfinex = new ccxt.bitfinex();
+
+console.log(ccxt);
+console.log(bitfinex);
+
 class App extends Component {
   render() {
     return (
