@@ -95,7 +95,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-        <button type="button" style={{'marginBottom': '60px'}} onClick={() => bugout.downloadLog()}>Download logs</button>
+        <button type="button" style={{'marginBottom': '60px'}} onClick={() => console.log('download...')}>Download logs</button>
           <img src={logo} style={{height: '40px'}} className="App-logo" alt="logo" />
           <h4>Ask</h4>
           <ul style={{'textAlign': 'left', 'color': 'grey', fontSize: '18px'}}>
