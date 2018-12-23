@@ -14,14 +14,14 @@ const kucoin = new ccxt.kucoin();
 const binance = new ccxt.binance();
 console.log(ccxt);
 console.log(bitfinex);
-binance.proxy = 'https://cors-anywhere.herokuapp.com/';
-bitfinex.proxy = 'https://cors-anywhere.herokuapp.com/';
-kucoin.proxy = 'https://cors-anywhere.herokuapp.com/';
-bittrex.proxy = 'https://cors-anywhere.herokuapp.com/';
-southxchange.proxy = 'https://cors-anywhere.herokuapp.com/';
-cex.proxy = 'https://cors-anywhere.herokuapp.com/';
-bleutrade.proxy = 'https://cors-anywhere.herokuapp.com/';
-kraken.proxy = 'https://cors-anywhere.herokuapp.com/';
+// binance.proxy = 'https://cors-anywhere.herokuapp.com/';
+// bitfinex.proxy = 'https://cors-anywhere.herokuapp.com/';
+// kucoin.proxy = 'https://cors-anywhere.herokuapp.com/';
+// bittrex.proxy = 'https://cors-anywhere.herokuapp.com/';
+// southxchange.proxy = 'https://cors-anywhere.herokuapp.com/';
+// cex.proxy = 'https://cors-anywhere.herokuapp.com/';
+// bleutrade.proxy = 'https://cors-anywhere.herokuapp.com/';
+// kraken.proxy = 'https://cors-anywhere.herokuapp.com/';
 
 class App extends Component {
   constructor(props){
@@ -88,7 +88,7 @@ class App extends Component {
   }
 
   timeInterval = () => {
-    setInterval(this.prova, 300000);
+    setInterval(this.prova, 15000);
   }
 
   render() {
