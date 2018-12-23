@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import debugout from './debugout.js';
 
+const bugout = new debugout();
 
 const ccxt = require('ccxt')
 const bitfinex = new ccxt.bitfinex();
@@ -12,16 +14,18 @@ const bleutrade = new ccxt.bleutrade();
 const kraken = new ccxt.kraken();
 const kucoin = new ccxt.kucoin();
 const binance = new ccxt.binance();
-console.log(ccxt);
-console.log(bitfinex);
-// binance.proxy = 'https://cors-anywhere.herokuapp.com/';
-// bitfinex.proxy = 'https://cors-anywhere.herokuapp.com/';
-// kucoin.proxy = 'https://cors-anywhere.herokuapp.com/';
-// bittrex.proxy = 'https://cors-anywhere.herokuapp.com/';
-// southxchange.proxy = 'https://cors-anywhere.herokuapp.com/';
-// cex.proxy = 'https://cors-anywhere.herokuapp.com/';
-// bleutrade.proxy = 'https://cors-anywhere.herokuapp.com/';
-// kraken.proxy = 'https://cors-anywhere.herokuapp.com/';
+
+console.log(bugout);
+
+
+binance.proxy = 'https://cors-anywhere.herokuapp.com/';
+bitfinex.proxy = 'https://cors-anywhere.herokuapp.com/';
+kucoin.proxy = 'https://cors-anywhere.herokuapp.com/';
+bittrex.proxy = 'https://cors-anywhere.herokuapp.com/';
+southxchange.proxy = 'https://cors-anywhere.herokuapp.com/';
+cex.proxy = 'https://cors-anywhere.herokuapp.com/';
+bleutrade.proxy = 'https://cors-anywhere.herokuapp.com/';
+kraken.proxy = 'https://cors-anywhere.herokuapp.com/';
 
 class App extends Component {
   constructor(props){
@@ -82,9 +86,9 @@ class App extends Component {
       return {spread: spread}
     });
 
-    console.log(this.state)
-    console.log(new Date())
-    console.log('--------------')
+    bugout.log(this.state)
+    bugout.log(new Date())
+    bugout.log('--------------')
   }
 
   timeInterval = () => {
