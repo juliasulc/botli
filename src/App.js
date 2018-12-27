@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import debugout from './debugout.js';
+import counter from '../worker/index';
 
 const bugout = new debugout();
 
@@ -40,8 +41,8 @@ class App extends Component {
       opportunity: null,
       spread: null
     };
-    this.timeInterval();
-
+    
+    // this.timeInterval();
   }
 
   prova = async () => {
@@ -96,6 +97,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      {counter}
         <header className="App-header">
         <button type="button" style={{'marginBottom': '60px'}} onClick={() => bugout.downloadLog()}>Download logs</button>
           <img src={logo} style={{height: '40px'}} className="App-logo" alt="logo" />
