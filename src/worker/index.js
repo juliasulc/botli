@@ -1,5 +1,6 @@
 const ccxt = require('ccxt');
 const EmailService = require('./EmailService');
+const log = require('./logger');
 
 const bitfinex = new ccxt.bitfinex();
 
