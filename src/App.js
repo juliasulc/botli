@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import debugout from './debugout.js';
-import counter from '../worker/index';
+import counter from './worker/index';
 
 const bugout = new debugout();
 
