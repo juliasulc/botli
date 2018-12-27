@@ -4,10 +4,10 @@ const log = require('./logger');
 
 const bitfinex = new ccxt.bitfinex();
 
-const emailService = new EmailService('gmail',{
+const emailService = new EmailService('gmail', {
     user: 'nodelibotli@gmail.com',
     pass: 'nodeli2018'
-  })
+})
 
 emailService.sendMail('last update from nodeli', 'nodeli is growing even more!');
 
