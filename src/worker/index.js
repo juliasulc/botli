@@ -24,4 +24,4 @@ const startPolling = async () => {
 
 setInterval(startPolling, 300000);
 
-module.exports = exports = counter;
+export default counter;
