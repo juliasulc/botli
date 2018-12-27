@@ -9,7 +9,8 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.1",
-    "serve": "^10.1.1"
+    "serve": "^10.1.1",
+    "simple-node-logger": "^18.12.21"
   },
   "scripts": {
     "dev": "react-scripts start",
